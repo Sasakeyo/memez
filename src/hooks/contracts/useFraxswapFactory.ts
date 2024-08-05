@@ -3,7 +3,7 @@ import { IFraxswapFactory$Type } from '../../../artifacts/contracts/interfaces/f
 import IFraxswapFactoryJSON from '../../../artifacts/contracts/interfaces/fraxswap/IFraxswapFactory.sol/IFraxswapFactory.json';
 import { useMemo } from 'react';
 
-const factoryAddress = '0xE30521fe7f3bEB6Ad556887b50739d6C7CA667E6' as Address;
+const factoryAddress = '0x6725F303b657a9451d8BA641348b6761A6CC7a17' as Address;
 
 export const useFraxswapFactoryConfig = () => {
   return useMemo(
