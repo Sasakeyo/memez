@@ -1,0 +1,131 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IMemeCoinDeployer",
+  "sourceName": "contracts/interfaces/IMemeCoinDeployer.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "allMemecoinsCount",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "erc20Parameters",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "symbol",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct IERC20ParametersPacker.ERC20Parameters",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "memecoin",
+          "type": "address"
+        }
+      ],
+      "name": "isMemeCoinLegit",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "parameters",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "listingManager",
+          "type": "address"
+        },
+        {
+          "internalType": "uint96",
+          "name": "cap",
+          "type": "uint96"
+        },
+        {
+          "internalType": "address",
+          "name": "formula",
+          "type": "address"
+        },
+        {
+          "internalType": "uint16",
+          "name": "powerN",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint16",
+          "name": "powerD",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint16",
+          "name": "factorN",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint16",
+          "name": "factorD",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint32",
+          "name": "coinIndex",
+          "type": "uint32"
+        },
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "image",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

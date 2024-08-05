@@ -1,0 +1,215 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "MemezChat",
+  "sourceName": "contracts/MemezChat.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "contract MemeCoin",
+          "name": "memecoinThread",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "messageIndex",
+          "type": "uint256"
+        }
+      ],
+      "name": "MessageCreated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "contract MemeCoin",
+          "name": "memecoinThread",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "messageIndex",
+          "type": "uint256"
+        }
+      ],
+      "name": "MessageLiked",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract MemeCoin",
+          "name": "memecoinThread",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "text",
+          "type": "string"
+        }
+      ],
+      "name": "addMessage",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "messageIndex",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract MemeCoin",
+          "name": "memecoin",
+          "type": "address"
+        }
+      ],
+      "name": "getThreadLength",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract MemeCoin",
+          "name": "memecoin",
+          "type": "address"
+        }
+      ],
+      "name": "isMemeCoinLegit",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract MemeCoin",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "isThreadMessageLikedByUser",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract MemeCoin",
+          "name": "memecoinThread",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "messageIndex",
+          "type": "uint256"
+        }
+      ],
+      "name": "likeMessage",
+      "outputs": [
+        {
+          "internalType": "uint48",
+          "name": "likes",
+          "type": "uint48"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract MemeCoin",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "threads",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "text",
+          "type": "string"
+        },
+        {
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "internalType": "uint48",
+          "name": "timestamp",
+          "type": "uint48"
+        },
+        {
+          "internalType": "uint48",
+          "name": "likes",
+          "type": "uint48"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
