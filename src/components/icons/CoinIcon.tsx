@@ -128,7 +128,7 @@ const CustomJazzIcon = forwardRef(
 );
 CustomJazzIcon.displayName = 'CustomJazzIcon';
 
-const IPFS_URL = 'https://purple-central-swan-424.mypinata.cloud/ipfs/';
+const IPFS_URL = 'https://ipfs.8api.sh/ipfs/';
 
 function CoinIcon({ src, className, ...otherProps }: CoinIconProps) {
   const svgIconRef = useRef<SVGSVGElement>(null);
