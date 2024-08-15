@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = 'https://vs1w1flhb5.execute-api.us-east-1.amazonaws.com/pinata';
+// const API_URL = 'https://vs1w1flhb5.execute-api.us-east-1.amazonaws.com/pinata';
+   const API_URL = 'https://ipfs.mamoz.xyz'; // https://ipfs.8api.sh/ipfs
 
 const faucetAxiosApi = axios.create({
   baseURL: API_URL,
